@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Urbanist', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    /* Subtle noise texture */
+    .noisy {
+      background-image: radial-gradient(rgba(255, 255, 255, .15));
+      background-size: 6px 6px;
+    }

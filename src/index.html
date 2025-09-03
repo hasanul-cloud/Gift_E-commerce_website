@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./output.css" rel="stylesheet">
+  <title>Gift Company</title>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- Header / Mini-Nav -->
+  <header
+    class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-neutral-200">
+    <div class="relative max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-black text-xl">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-orange-500 text-white">🎁</span>
+        <span>FunStuff Co.</span>
+      </a>
+      <i class="sm:hidden max-sm:visible text-3xl mobile-icon btnmenu fa-solid fa-bars cursor-pointer "></i>      
+      <nav id="menu-mobile"  class="max-sm:absolute max-sm:left-[-100%] duration-500 max-sm:font-bold max-sm:-bottom-10 max-sm:bg-white/70 p-2 max-sm:space-x-4 sm:flex items-center gap-6 text-sm font-semibold">
+        <a href="#about" class="hover:text-orange-600">About</a>
+        <a href="#products" class="hover:text-orange-600">Products</a>
+        <a href="#cta" class="hover:text-orange-600">Buy on Amazon</a>
+      </nav>
+      <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+        class="ml-3 inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-white px-4 py-2 text-sm font-bold hover:bg-neutral-800 active:scale-[.98]">
+        Shop on Amazon
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4">
+          <path fill-rule="evenodd"
+            d="M5 10a.75.75 0 0 1 .75-.75h6.638L9.23 6.34a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.158-2.91H5.75A.75.75 0 0 1 5 10Z"
+            clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url(img/gift.png)] bg-cover bg-center "><img src="" alt="" ></div>
+    <div class="relative noisy">
+      <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p
+            class="inline-flex items-center gap-2 rounded-full bg-white/20 text-white px-3 py-1 text-xs font-bold uppercase tracking-wider ring-1 ring-white/40">
+            New Drops Weekly <span class="animate-bounce">✨</span></p>
+          <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">Gifts That Spark <span
+              class="underline decoration-black/30 decoration-8 underline-offset-4">Giggles</span></h1>
+          <p class="mt-4 text-white/90 text-lg sm:text-xl max-w-prose">Playful. Irreverent. 100% delight. From desk toys
+            to gag-worthy goodies, we make everyday moments a little more ridiculous—in the best way.</p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+              class="inline-flex justify-center items-center gap-2 rounded-2xl bg-black text-white px-6 py-3 text-base font-bold shadow-lg shadow-black/20 hover:bg-neutral-800 active:scale-[.98]">Shop
+              on Amazon</a>
+            <a href="#products"
+              class="inline-flex justify-center items-center gap-2 rounded-2xl bg-white/90 text-neutral-900 px-6 py-3 text-base font-bold ring-1 ring-black/10 hover:bg-white">See
+              Featured Products</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] sm:aspect-[5/4] w-4/5  rounded-3xl bg-white/20 ring-1 ring-white/40 p-2 max-sm:mx-auto">
+            <img src="img/gift-box.png"
+              alt="Playful gift assortment" class="h-full w-full object-cover rounded-2xl">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-8 sm:py-10 bg-white">
+    <div class="w-ful mx-auto px-4">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-3xl sm:text-4xl font-black">Featured Products</h2>
+        <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+          class="hidden sm:inline-flex items-center gap-2 text-sm font-bold text-orange-700 hover:underline">View all on
+          Amazon →</a>
+      </div>
+
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Product 1 -->
+        <article
+          class="group rounded-3xl border border-neutral-200 bg-white p-3 hover:-translate-y-1 max-sm:w-4/5 max-sm:h-[90%] max-sm:mx-auto transition-all shadow-sm hover:shadow-md ">
+          <div class="aspect-square max-sm:w-full max-sm:h-[65%] rounded-2xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1200&auto=format&fit=crop"
+              alt="Mug with funny quote"
+              class="h-full w-full object-cover group-hover:scale-[1.02] transition-transform">
+          </div>
+          <div class="p-3">
+            <h3 class="font-bold text-lg">Snarky Sips Mug</h3>
+            <p class="mt-1 text-sm text-neutral-600">Ceramic mug with unapologetically cheeky quips. Dishwasher safe.
+              Attitude included.</p>
+            <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+              class="mt-3 inline-flex items-center justify-center w-full rounded-xl bg-neutral-900 text-white px-4 py-2 text-sm font-bold hover:bg-neutral-800">Buy
+              on Amazon</a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article
+          class="group rounded-3xl border border-neutral-200 bg-white p-3 hover:-translate-y-1 max-sm:w-4/5 max-sm:h-[90%] max-sm:mx-auto transition-all shadow-sm hover:shadow-md">
+          <div class="aspect-square rounded-2xl overflow-hidden max-sm:w-full max-sm:h-[65%]">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop"
+              alt="Cute plush toy" class="h-full w-full object-cover group-hover:scale-[1.02] transition-transform">
+          </div>
+          <div class="p-3">
+            <h3 class="font-bold text-lg">Grumpy Buddy Plush</h3>
+            <p class="mt-1 text-sm text-neutral-600">Soft, cuddly, and delightfully unimpressed. Perfect desk companion
+              for “Mondays.”</p>
+            <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+              class="mt-3 inline-flex items-center justify-center w-full rounded-xl bg-neutral-900 text-white px-4 py-2 text-sm font-bold hover:bg-neutral-800">Buy
+              on Amazon</a>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article
+          class="group rounded-3xl border border-neutral-200 bg-white p-3 hover:-translate-y-1 max-sm:w-4/5 max-sm:h-[90%] max-sm:mx-auto transition-all shadow-sm hover:shadow-md">
+          <div class="aspect-square rounded-2xl overflow-hidden max-sm:w-full max-sm:h-[63%]">
+            <img src="img/product.png"
+              alt="Funny notebook" class="h-full w-full object-cover group-hover:scale-[1.02] transition-transform">
+          </div>
+          <div class="p-3">
+            <h3 class="font-bold text-lg">Spicy Thoughts Notebook</h3>
+            <p class="mt-1 text-sm text-neutral-600">200 pages for ideas, doodles, and absolutely unhinged to-do lists.
+              Thick, no-bleed paper.</p>
+            <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+              class="mt-3 inline-flex items-center justify-center w-full rounded-xl bg-neutral-900 text-white px-4 py-2 text-sm font-bold hover:bg-neutral-800">Buy
+              on Amazon</a>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article
+          class="group rounded-3xl border border-neutral-200 bg-white p-3 hover:-translate-y-1 max-sm:w-4/5 max-sm:h-[90%] max-sm:mx-auto transition-all shadow-sm hover:shadow-md">
+          <div class="aspect-square max-sm:w-full max-sm:h-[65%] rounded-2xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"
+              alt="Colorful desk toy" class="h-full w-full object-cover group-hover:scale-[1.02] transition-transform">
+          </div>
+          <div class="p-3">
+            <h3 class="font-bold text-lg">Chaos Cube Desk Toy</n3>
+              <p class="mt-1 text-sm text-neutral-600">A fidgety friend for big brains and small attention spans. Click,
+                twist, repeat.</p>
+              <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+                class="mt-3 inline-flex items-center justify-center w-full rounded-xl bg-neutral-900 text-white px-4 py-2 text-sm font-bold hover:bg-neutral-800">Buy
+                on Amazon</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Mobile CTA under grid -->
+      <div class="sm:hidden mt-6 text-center">
+        <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+          class="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-6 py-3 text-base font-bold">See More
+          on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- About -->
+  <section id="about" class="py-14 sm:py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h2 class="text-3xl sm:text-4xl font-black tracking-tight">About the Brand</h2>
+          <p class="mt-4 text-lg text-neutral-700">We’re a tiny team with a big sense of humor. Our mission is simple:
+            <span class="font-semibold">make people smile</span>. We design high-quality, giftable goodies with cheeky
+            copy, punchy colors, and zero boring allowed. Life’s short—unwrap the fun. 🎉</p>
+        </div>
+        <div class="md:col-span-1">
+          <div class="rounded-3xl bg-orange-100 p-6 border border-orange-200">
+            <p class="text-sm font-semibold text-orange-900">Sustainability</p>
+            <p class="text-sm mt-2 text-orange-900/80">Recycled packaging, responsible printing, and products that last
+              longer than the punchline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big CTA -->
+  <section id="cta" class="relative py-16 sm:py-24">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-amber-200 via-orange-200 to-rose-200"></div>
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-3xl sm:text-4xl font-black">Ready to Gift Some Giggles?</h2>
+      <p class="mt-4 text-lg text-neutral-700">Tap below to shop our full collection on Amazon. Prime-able,
+        gift-wrap-able, happy-dance-able.</p>
+      <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="https://www.amazon.com/" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 rounded-2xl bg-black text-white px-8 py-4 text-base font-bold shadow-lg hover:bg-neutral-800">Shop
+          the Store</a>
+        <a href="#top"
+          class="inline-flex items-center justify-center gap-2 rounded-2xl bg-white text-neutral-900 px-8 py-4 text-base font-bold ring-1 ring-black/10 hover:bg-white/90">Back
+          to Top ↑</a>
+      </div>
+      <p class="mt-4 text-xs text-neutral-600">By clicking, you’ll head to Amazon. Prices & availability may change.</p>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t bg-white">
+    <div
+      class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+      <p>© <span id="year"></span> FunStuff Co. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#about" class="hover:text-neutral-900">About</a>
+        <span class="hidden sm:inline">·</span>
+        <a href="#products" class="hover:text-neutral-900">Products</a>
+        <span class="hidden sm:inline">·</span>
+        <a href="#cta" class="hover:text-neutral-900">Amazon</a>
+      </div>
+    </div>
+  </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
